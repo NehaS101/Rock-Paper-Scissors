@@ -16,4 +16,21 @@ elif (user_choice == "rock" or computer_choice == "scissor") or (user_choice == 
 else:
     res = "computer wins, better luck next time"
 
-    
+print(f"your choice : {user_choice}")
+print(f"computer wins : {computer_choice}")
+print(res)
+
+
+#score of winners
+user_win=0
+comp_win=0
+draw_win=0
+
+if res== "match draw":
+    draw_win += 1
+elif res == "you win, congratulations!":
+    user_win += 1
+else:
+    comp_win += 1
+
+print(f"Score: User-{user_win}, Computer-{comp_win}, Draw-{draw_win}")            
