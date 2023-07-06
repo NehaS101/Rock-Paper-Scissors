@@ -18,11 +18,14 @@ def play(user_choice):
 
  print(f"your choice : {user_choice}")
  print(f"computer choice : {computer_choice}")
- print(res)
+ score(res)
+ 
+
 
 
 
 #score of winners
+def score(res):
  user_win=0
  comp_win=0
  draw_win=0
@@ -35,6 +38,7 @@ def play(user_choice):
     comp_win += 1
 
  print(f"Score: User-{user_win}, Computer-{comp_win}, Draw-{draw_win}")     
+
 
 #your choice from input
 user_choice = input("please enter you choice(rock,paper,scissor): ")
